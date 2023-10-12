@@ -1,0 +1,8 @@
+[
+  {
+    "title": "Home Title",
+    "key": "hero",
+    "img": "main-hero-image.jpg",
+    "description": "Welcome to my Website powered by Nuxt Studio."
+  }
+]
