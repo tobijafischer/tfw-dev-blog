@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxthq/studio',
   ],
 })
