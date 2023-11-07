@@ -1,0 +1,68 @@
+/* import a variable font in the formats ttf, woff and woff2 */
+@font-face {
+  font-family: 'Montefiore';
+  src: url('../fonts/montefiore-variable-condensed-pro.ttf') format('truetype'),
+       url('../fonts/montefiore-variable-condensed-pro.woff') format('woff'),
+       url('../fonts/montefiore-variable-condensed-pro.woff2') format('woff2');
+  font-weight: 100 800;
+  font-display: swap;
+}
+
+:root {
+  --main-bg: #331832;
+  --main-color: #F7BCAD;
+  /* --main-accent: #D81E5B; */
+  --main-color: #FDF0D5;
+  --main-bg: #2A1833;
+  --main-bg: #203540;
+  --main-bg: #172C33;
+  /* --main-color: #FA5576; */
+  --main-accent: #FA5576;
+  --main-accent: #E43955;
+  --main-gradient: linear-gradient(225deg, #e43955 0%, #fdf0d5 100%);
+  --main-gradient-oklab: linear-gradient(
+    225deg in oklab, 
+    #E43955 0%, #FDF0D5 100%
+  );
+  --secondary-gradient: linear-gradient(225deg, #172c33 0%, #fdf0d5 100%);
+  --tertiary-gradient: linear-gradient(225deg, #172c33 0%, #e43955 100%);
+}
+::selection {
+  background-color: var(--main-accent);
+}
+
+body {
+  font-family: 'aktiv-grotesk', system-ui, sans-serif;
+  font-weight: 500;
+  background: var(--main-bg);
+  color: var(--main-color);
+}
+html[data-mode="light"] {
+  --main-color: #172C33;
+  --main-bg: #FDF0D5;
+  --main-accent: #FA5576;
+  --main-accent: #E43955;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montefiore', 'Frutiger', sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 8rem;
+}
+h3 {
+  font-size: 3rem;
+  transition: font-weight .3s ease-in-out;
+}
+a {
+  color: var(--main-accent);
+  text-decoration: none;
+  border-bottom: 1px;
+}
+
+.active-grotesk {
+  font-family: 'aktiv-grotesk', system-ui, sans-serif;
+  text-transform: initial;
+}

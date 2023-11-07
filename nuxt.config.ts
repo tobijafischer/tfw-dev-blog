@@ -5,5 +5,16 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxthq/studio',
+    '@vueuse/nuxt',
+    'nuxt-lenis',
+  ],
+  app: {
+    head: {
+      link: [{ rel: 'stylesheet', href: 'https://use.typekit.net/kxl6riz.css' }]
+    }
+  },
+  css: [
+    '~/assets/css/reset.css',
+    '~/assets/css/app.css',
   ],
 })
